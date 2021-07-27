@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 
 import "./layout.css"
 
-const Text = ({ children }) => {
+const Text2 = ({ children }) => {
 
   return (
     <>
@@ -20,7 +20,7 @@ const Text = ({ children }) => {
           width: `100%`,
           height: 745,
           padding: `0 1.0875rem 1.45rem`,
-          backgroundColor: `#7BB41C`,
+          backgroundColor: `#FFBB54`,
           border: `4px solid #000000`,
         }}
       >
@@ -30,8 +30,8 @@ const Text = ({ children }) => {
   )
 }
 
-Text.propTypes = {
+Text2.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Text
+export default Text2
