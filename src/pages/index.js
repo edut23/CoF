@@ -6,23 +6,44 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+  <Layout style={{
+    backgroundImage: `fundo.jpg`
+  }}><div>
+    <div style={{ padding: `130px 20px`,}}>
     <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
+      src="../images/PNG.png"
+      width={808}
+      height={430}
       quality={95}
       formats={["AUTO", "WEBP", "AVIF"]}
       alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
+      pos
+      style={{ position: `relative`,}}
     />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
+    </div>
+    <StaticImage
+      src="../images/map-location.png"
+      width={50}
+      height={50}
+      quality={95}
+      formats={["AUTO", "WEBP", "AVIF"]}
+      alt="A Gatsby astronaut"
+      pos
+      style={{ position: `relative`}}
+    />
+    <h2 style={{
+        color: `#FFFFFF`,
+        fontFamily: `arial`,
+        padding: `0px 30px`,
+        fontSize: `38px`,
+        fontWeight: `bold`,
+        webkitTextStrokeWidth: `2.7px`,
+        webkitTextStrokeColor: `#000000`,
+        float: `right`
+      }}>
+      Rua Alfredo Lopes 1717 - CEP 13560460
+    </h2>
+    </div>
   </Layout>
 )
 
