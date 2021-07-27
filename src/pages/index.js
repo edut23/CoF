@@ -3,9 +3,10 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Text from "../components/text"
 
 const IndexPage = () => (
+  <main>
   <Layout style={{
     backgroundImage: `fundo.jpg`
   }}><div>
@@ -45,6 +46,8 @@ const IndexPage = () => (
     </h2>
     </div>
   </Layout>
+  <Text/>
+  </main>
 )
 
 export default IndexPage
